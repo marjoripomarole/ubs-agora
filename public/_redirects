@@ -1,0 +1,5 @@
+# Redireciona www -> apex (trocar o domínio pelo real quando comprar)
+# https://www.SEUDOMINIO.com.br/* https://SEUDOMINIO.com.br/:splat 301!
+
+# Fallback para SPA (não aplica aqui, mas útil se adicionar rotas depois)
+# /* /index.html 200

@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Transou sem camisinha? Vai na UBS. Tem remédio que bloqueia o HIV em até 72h. Teste de sífilis, HIV e hepatite na hora. Tudo de graça pelo SUS. Sigilo por lei a partir de 12 anos.">
+<meta name="theme-color" content="#1a1a2e">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Material educativo independente">
+
+<!-- Open Graph / WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Transou sem camisinha? UBS, agora.">
+<meta property="og:description" content="Tem remédio que bloqueia o HIV em até 72h. Teste na hora, tratamento na hora. Tudo de graça pelo SUS. A partir dos 12 anos você vai sozinha e tem sigilo por lei.">
+<meta property="og:image" content="/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Transou sem camisinha? UBS, agora.">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Transou sem camisinha? UBS, agora.">
+<meta name="twitter:description" content="Tem remédio que bloqueia o HIV em até 72h. Tudo de graça pelo SUS.">
+<meta name="twitter:image" content="/og-image.png">
+
+<!-- Favicon inline SVG (sem request extra) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF2E63'/%3E%3Ctext x='50' y='70' font-family='Arial Black,sans-serif' font-weight='900' font-size='60' text-anchor='middle' fill='%23FFE600'%3E!%3C/text%3E%3C/svg%3E">
+
+<title>Transou sem camisinha? UBS, agora. — Guia pra jovens sobre sífilis e sexo seguro</title>
+
+<style>
+  /* ============ RESET ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    background: #FFF8E8;
+    color: #1a1a2e;
+    line-height: 1.5;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  /* ============ VARS ============ */
+  :root {
+    --pink: #FF2E63;
+    --yellow: #FFE600;
+    --teal: #00C4AA;
+    --purple: #7B2CBF;
+    --dark: #1a1a2e;
+    --cream: #FFF8E8;
+    --white: #ffffff;
+  }
+
+  /* ============ LAYOUT ============ */
+  .container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  section { padding: 56px 0; }
+  @media (min-width: 768px) {
+    section { padding: 80px 0; }
+  }
+
+  /* ============ NAV ============ */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--dark);
+    color: var(--white);
+    padding: 10px 0;
+    border-bottom: 3px solid var(--yellow);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .nav-logo {
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .nav-logo .dot { color: var(--pink); }
+  .nav-cta {
+    background: var(--pink);
+    color: var(--white);
+    padding: 8px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: #e6204d; }
+
+  /* ============ HERO ============ */
+  .hero {
+    padding: 48px 0 56px;
+  }
+  .hero h1 {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 0.92;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 768px) {
+    .hero h1 { font-size: 76px; letter-spacing: -3.5px; }
+  }
+  .hero h1 .pink { color: var(--pink); }
+  .hero h1 .hl {
+    background: var(--yellow);
+    padding: 0 10px;
+    display: inline-block;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  .hero-sub {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 32px;
+    max-width: 600px;
+  }
+  @media (min-width: 768px) {
+    .hero-sub { font-size: 22px; }
+  }
+  .hero-sub .arrow { color: var(--pink); font-weight: 900; }
+
+  /* ============ CTAs do hero ============ */
+  .cta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  @media (min-width: 500px) {
+    .cta-row { flex-direction: row; }
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 24px;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: transform 0.1s;
+    text-align: center;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary {
+    background: var(--pink);
+    color: var(--white);
+  }
+  .btn-primary:hover { background: #e6204d; }
+  .btn-secondary {
+    background: var(--dark);
+    color: var(--white);
+  }
+  .btn-secondary:hover { background: #000; }
+
+  /* ============ 3 STEPS ============ */
+  .steps {
+    background: var(--dark);
+    color: var(--white);
+  }
+  .steps h2 {
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+    color: var(--white);
+  }
+  @media (min-width: 768px) {
+    .steps h2 { font-size: 42px; }
+  }
+  .steps h2 .hl {
+    background: var(--yellow);
+    color: var(--dark);
+    padding: 0 8px;
+  }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 640px) {
+    .steps-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .step-card {
+    background: var(--white);
+    color: var(--dark);
+    border-radius: 12px;
+    padding: 28px 24px;
+  }
+  .step-card.s1 { background: var(--pink); color: var(--white); }
+  .step-card.s1 .step-num { color: var(--yellow); }
+  .step-card.s2 { background: var(--yellow); color: var(--dark); }
+  .step-card.s2 .step-num { color: var(--pink); }
+  .step-card.s3 { background: var(--teal); color: var(--dark); }
+  .step-card.s3 .step-num { color: var(--dark); }
+  .step-num {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+  }
+  .step-verb {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+  .step-txt {
+    font-size: 15px;
+    line-height: 1.45;
+    font-weight: 600;
+  }
+
+  /* ============ SINTOMAS / ALERT ============ */
+  .alert-section {
+    background: var(--cream);
+  }
+  .alert-box {
+    background: var(--yellow);
+    border: 5px solid var(--dark);
+    border-radius: 12px;
+    padding: 28px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  @media (min-width: 600px) {
+    .alert-box { padding: 36px 40px; gap: 28px; }
+  }
+  .alert-icon {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: var(--pink);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 42px;
+  }
+  @media (min-width: 600px) {
+    .alert-icon { width: 90px; height: 90px; font-size: 56px; }
+  }
+  .alert-text h3 {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  @media (min-width: 600px) {
+    .alert-text h3 { font-size: 26px; }
+  }
+  .alert-text p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  /* ============ FAQ / EXPLICA ============ */
+  .faq {
+    background: var(--white);
+  }
+  .faq h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 768px) {
+    .faq h2 { font-size: 48px; letter-spacing: -2px; }
+  }
+  .faq h2 .pink { color: var(--pink); }
+  .faq-item {
+    border-top: 2px solid var(--dark);
+    padding: 20px 0;
+  }
+  .faq-item:last-child { border-bottom: 2px solid var(--dark); }
+  .faq-question {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 6px 0;
+  }
+  @media (min-width: 600px) {
+    .faq-question { font-size: 22px; }
+  }
+  .faq-toggle {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: var(--dark);
+    color: var(--yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1;
+    transition: transform 0.2s;
+  }
+  .faq-item.open .faq-toggle {
+    transform: rotate(45deg);
+    background: var(--pink);
+    color: var(--white);
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  .faq-item.open .faq-answer {
+    max-height: 600px;
+  }
+  .faq-answer-inner {
+    padding: 16px 0 8px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .faq-answer-inner strong {
+    background: var(--yellow);
+    padding: 0 4px;
+  }
+
+  /* ============ DADOS ============ */
+  .dados {
+    background: var(--pink);
+    color: var(--white);
+  }
+  .dados .kicker {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--dark);
+    font-weight: 900;
+    font-size: 13px;
+    padding: 6px 14px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .dados h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+    color: var(--white);
+  }
+  @media (min-width: 768px) {
+    .dados h2 { font-size: 44px; letter-spacing: -2px; }
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 640px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .stat-card {
+    background: var(--dark);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 28px 24px;
+  }
+  .stat-big {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -4px;
+    color: var(--yellow);
+    margin-bottom: 8px;
+  }
+  .stat-big .unit {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  .stat-label {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+  }
+  .stat-source {
+    font-size: 11px;
+    font-style: italic;
+    opacity: 0.7;
+    line-height: 1.3;
+  }
+
+  /* ============ RACISMO ============ */
+  .racismo {
+    background: var(--dark);
+    color: var(--white);
+  }
+  .racismo .kicker {
+    display: inline-block;
+    background: var(--pink);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 13px;
+    padding: 6px 14px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .racismo h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    color: var(--white);
+  }
+  @media (min-width: 768px) {
+    .racismo h2 { font-size: 44px; letter-spacing: -2px; }
+  }
+  .racismo h2 .yellow { color: var(--yellow); }
+  .racismo .lead {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    max-width: 640px;
+  }
+  @media (min-width: 768px) {
+    .racismo .lead { font-size: 19px; }
+  }
+  .racismo-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 600px) {
+    .racismo-stats { grid-template-columns: repeat(2, 1fr); }
+  }
+  .racismo-stat {
+    background: #2a2a44;
+    border-left: 6px solid var(--pink);
+    padding: 20px 22px;
+    border-radius: 0 8px 8px 0;
+  }
+  .racismo-stat .num {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--yellow);
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+  }
+  .racismo-stat .num .unit { font-size: 22px; }
+  .racismo-stat .txt {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .racismo-quote {
+    background: var(--yellow);
+    color: var(--dark);
+    padding: 28px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.45;
+    position: relative;
+  }
+  @media (min-width: 768px) {
+    .racismo-quote { font-size: 18px; padding: 32px 36px; }
+  }
+  .racismo-quote .mark {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 0.5;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--pink);
+  }
+  .racismo-quote cite {
+    display: block;
+    margin-top: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ============ CRIME ============ */
+  .crime {
+    background: var(--yellow);
+  }
+  .crime h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 768px) {
+    .crime h2 { font-size: 44px; letter-spacing: -2px; }
+  }
+  .crime h2 .pink { color: var(--pink); }
+  .crime .sub {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    max-width: 600px;
+  }
+  .crime-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 640px) {
+    .crime-cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  .crime-card {
+    background: var(--dark);
+    color: var(--white);
+    padding: 24px 22px;
+    border-radius: 12px;
+  }
+  .crime-card .art {
+    display: inline-block;
+    background: var(--pink);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  .crime-card h3 {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.1;
+  }
+  .crime-card p {
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .crime-card p:last-child { margin-bottom: 0; }
+  .crime-card .pena {
+    background: var(--yellow);
+    color: var(--dark);
+    padding: 2px 6px;
+    font-weight: 900;
+  }
+
+  /* ============ UBS ============ */
+  .ubs {
+    background: var(--dark);
+    color: var(--white);
+  }
+  .ubs .kicker {
+    display: inline-block;
+    color: var(--teal);
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .ubs h2 {
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+    color: var(--white);
+  }
+  @media (min-width: 768px) {
+    .ubs h2 { font-size: 56px; letter-spacing: -3px; }
+  }
+  .ubs .addr {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  .ubs-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 600px) {
+    .ubs-info-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .ubs-info-item .k {
+    font-size: 11px;
+    color: var(--yellow);
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .ubs-info-item .v {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .ubs-info-item .v.big {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+  }
+  .ubs-info-item .v a {
+    color: var(--teal);
+    border-bottom: 2px solid transparent;
+  }
+  .ubs-info-item .v a:hover { border-bottom-color: var(--teal); }
+  .ubs-cta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  @media (min-width: 500px) {
+    .ubs-cta-row { flex-direction: row; }
+  }
+  .ubs-cta-row .btn-primary { background: var(--teal); color: var(--dark); }
+  .ubs-cta-row .btn-primary:hover { background: #00a892; }
+  .ubs-cta-row .btn-secondary { background: var(--pink); }
+
+  /* ============ DIREITOS ============ */
+  .direitos {
+    background: var(--purple);
+    color: var(--white);
+  }
+  .direitos .kicker {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--dark);
+    font-weight: 900;
+    font-size: 13px;
+    padding: 6px 14px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .direitos h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+    color: var(--white);
+  }
+  @media (min-width: 768px) {
+    .direitos h2 { font-size: 48px; letter-spacing: -2px; }
+  }
+  .direitos h2 .yellow { color: var(--yellow); }
+  .direitos-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .direito-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-left: 5px solid var(--yellow);
+    padding: 18px 22px;
+    border-radius: 0 8px 8px 0;
+  }
+  .direito-item .ico {
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--yellow);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .direito-item h3 {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .direito-item p {
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 600;
+  }
+
+  /* ============ CANAIS ============ */
+  .canais {
+    background: var(--cream);
+  }
+  .canais h2 {
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  @media (min-width: 768px) {
+    .canais h2 { font-size: 40px; letter-spacing: -2px; }
+  }
+  .canais-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  @media (min-width: 600px) {
+    .canais-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .canal {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--white);
+    border: 2px solid var(--dark);
+    padding: 16px 18px;
+    border-radius: 10px;
+    transition: transform 0.1s;
+  }
+  .canal:hover { transform: translateY(-2px); }
+  .canal-num {
+    flex-shrink: 0;
+    background: var(--dark);
+    color: var(--yellow);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .canal-txt .title {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .canal-txt .desc {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 32px 0;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer .line {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  footer .brand {
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+
+  /* ============ UTILS ============ */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- ======================= NAV ======================= -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="nav-logo">UBS<span class="dot">.</span>AGORA</div>
+    <a href="#ubs" class="nav-cta">Correr pra UBS</a>
+  </div>
+</nav>
+
+<!-- ======================= HERO ======================= -->
+<header class="hero">
+  <div class="container">
+    <h1>
+      Transou sem<br>
+      <span class="pink">camisinha?</span><br>
+      <span class="hl">UBS. Agora.</span>
+    </h1>
+    <p class="hero-sub">
+      <span class="arrow">→</span> Tem remédio que bloqueia o HIV em até 72h. Teste de sífilis, HIV e hepatite na hora. Tudo de graça.
+    </p>
+    <div class="cta-row">
+      <a href="#ubs" class="btn btn-primary">Onde ir agora</a>
+      <a href="#passos" class="btn btn-secondary">Como funciona</a>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= 3 PASSOS ======================= -->
+<section class="steps" id="passos">
+  <div class="container">
+    <h2>O que fazer em <span class="hl">3 passos</span></h2>
+    <div class="steps-grid">
+      <div class="step-card s1">
+        <div class="step-num">01</div>
+        <div class="step-verb">Corre</div>
+        <div class="step-txt">Em até 72h. Quanto antes, melhor. Tem remédio (PEP) que bloqueia o HIV.</div>
+      </div>
+      <div class="step-card s2">
+        <div class="step-num">02</div>
+        <div class="step-verb">Testa</div>
+        <div class="step-txt">Sífilis, HIV, hepatite B e C. Resultado em 30 minutos.</div>
+      </div>
+      <div class="step-card s3">
+        <div class="step-num">03</div>
+        <div class="step-verb">Trata</div>
+        <div class="step-txt">Deu reagente? Tratamento começa ali mesmo. Sigilo por lei.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ALERTA SINTOMA ======================= -->
+<section class="alert-section">
+  <div class="container">
+    <div class="alert-box">
+      <div class="alert-icon">!</div>
+      <div class="alert-text">
+        <h3>Ferida que não dói e some sozinha?</h3>
+        <p>É sífilis começando. A bactéria continua no corpo mesmo depois que a ferida some. Não espera. Vai testar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="faq" id="faq">
+  <div class="container">
+    <h2>As <span class="pink">dúvidas</span> que todo mundo tem</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>O que é PEP?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            PEP é <strong>Profilaxia Pós-Exposição</strong>. É um remédio que bloqueia o HIV se você começar a tomar em até <strong>72 horas</strong> depois de uma situação de risco. Quanto antes, melhor — idealmente nas 2 primeiras horas. Você toma 1 comprimido por dia durante 28 dias. É gratuito pelo SUS.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Como sei se peguei sífilis?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            O primeiro sinal é uma ferida única — o <strong>cancro duro</strong> — que pode aparecer no pênis, vagina, ânus, boca ou garganta entre 10 e 90 dias depois do sexo. Ela <strong>não dói, não coça, não arde</strong> e some sozinha depois de algumas semanas. MAS: a bactéria continua no corpo. Fases seguintes podem trazer manchas nas mãos e pés, febre, queda de cabelo. Muita gente fica sem sintoma visível por anos. Só o exame de sangue (teste rápido na UBS, resultado em 30 min) descobre com certeza.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Tenho menos de 18 anos, posso ir sozinha?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <strong>Sim.</strong> A partir dos 12 anos você tem direito de ir sozinha à UBS pra atendimento de saúde sexual. Isso está garantido pelo Estatuto da Criança e do Adolescente (ECA) e pela Resolução nº 41/1995 do CONANDA. Você não precisa de autorização dos pais, da escola, nem de ninguém. E a UBS tem <strong>obrigação legal de sigilo</strong> — ninguém vai contar pra sua família, escola ou parceiro.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Quanto custa?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <strong>Nada.</strong> Camisinha (externa e interna), teste rápido, PEP, PrEP, tratamento de sífilis com penicilina, consulta — tudo de graça pelo SUS. Você não precisa de carteirinha de convênio, nem de CPF em dia, nem de comprovante de residência. Basta chegar.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Já tive sífilis e tratei. Posso pegar de novo?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <strong>Pode, sim.</strong> A sífilis não gera imunidade. Se houver nova exposição sem camisinha, você pode se infectar de novo. Por isso: use camisinha, faça teste a cada 3-6 meses se tem vida sexual ativa, e lembre que parceiros/parceiras também precisam ser testados e tratados juntos.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>E se eu descobrir que tenho, e meu parceiro não quiser tratar?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Tente conversar e oferecer apoio — leve junto, mostre que o tratamento é simples. Se ele se recusar e continuar tendo relações desprotegidas sabendo que tem sífilis, <strong>ele está cometendo crime</strong> (Art. 130 do Código Penal). A equipe da UBS pode ajudar a pensar em como abordar parceiros. Você não tem obrigação de continuar uma relação que te coloca em risco.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DADOS ======================= -->
+<section class="dados" id="dados">
+  <div class="container">
+    <span class="kicker">★ OS NÚMEROS</span>
+    <h2>Sífilis tá explodindo<br>em São Paulo</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-big">4,6<span class="unit">x</span></div>
+        <div class="stat-label">Mais casos em gestantes em 2024 comparado a 2014.</div>
+        <div class="stat-source">Boletim Epidemiológico SMS-SP 2025 · Covisa</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-big">687<span class="unit">%</span></div>
+        <div class="stat-label">Aumento de casos em gestantes na capital entre 2010 e 2020.</div>
+        <div class="stat-source">Covisa/SMS-SP · Plano Municipal de Enfrentamento</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-big">203<span class="unit">mil</span></div>
+        <div class="stat-label">Casos de sífilis adquirida notificados em SP entre 2014 e 2025.</div>
+        <div class="stat-source">Boletim Epidemiológico SMS-SP 2025</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-big">30<span class="unit">min</span></div>
+        <div class="stat-label">É quanto tempo leva o teste rápido de sífilis numa UBS.</div>
+        <div class="stat-source">Protocolo SMS-SP</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RACISMO ======================= -->
+<section class="racismo" id="racismo">
+  <div class="container">
+    <span class="kicker">IMPORTANTE</span>
+    <h2>Sífilis tem <span class="yellow">cor</span>.<br>E o sistema sabe disso.</h2>
+    <p class="lead">
+      Sífilis congênita é 100% prevenível — um exame e uma injeção resolvem. Então por que ela existe? Porque o acesso à saúde não é igual. Pesquisa da Fiocruz com 15 milhões de registros de nascimento mostra o tamanho do problema.
+    </p>
+
+    <div class="racismo-stats">
+      <div class="racismo-stat">
+        <div class="num">70<span class="unit">%</span></div>
+        <div class="txt">das crianças com sífilis congênita no Brasil são filhas de mães negras</div>
+      </div>
+      <div class="racismo-stat">
+        <div class="num">67<span class="unit">%</span></div>
+        <div class="txt">dos casos em mulheres pretas seriam evitados se tivessem o mesmo risco-base das brancas</div>
+      </div>
+      <div class="racismo-stat">
+        <div class="num">52<span class="unit">%</span></div>
+        <div class="txt">dos casos em mulheres pardas seriam evitados no mesmo cenário</div>
+      </div>
+      <div class="racismo-stat">
+        <div class="num">89<span class="unit">%</span></div>
+        <div class="txt">dos casos de sífilis congênita no Brasil seriam evitados se todas tivessem o acesso de mulheres brancas com 12+ anos de estudo</div>
+      </div>
+    </div>
+
+    <blockquote class="racismo-quote">
+      <span class="mark">"</span>
+      São os determinantes sociais estruturais, como o racismo e suas manifestações, que colocam essas mulheres em maior vulnerabilidade — em decorrência das barreiras por ele impostas.
+      <cite>— Andrêa Ferreira, Cidacs / Fiocruz Bahia · The Lancet Regional Health Americas</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ======================= CRIME ======================= -->
+<section class="crime">
+  <div class="container">
+    <h2>Sabia e não <span class="pink">te avisou?</span><br>É crime.</h2>
+    <p class="sub">O Código Penal Brasileiro criminaliza quem transmite IST sabendo do próprio diagnóstico. Não precisa nem ter transmitido de fato — basta o risco.</p>
+
+    <div class="crime-cards">
+      <div class="crime-card">
+        <div class="art">Art. 130 CP</div>
+        <h3>Perigo de contágio venéreo</h3>
+        <p>Expor alguém a risco de IST sabendo que está contaminado: <span class="pena">3 meses a 1 ano</span> de detenção.</p>
+        <p>Com intenção de transmitir: <span class="pena">1 a 4 anos</span> de reclusão.</p>
+      </div>
+      <div class="crime-card">
+        <div class="art">Art. 129 § 2º II CP</div>
+        <h3>Lesão corporal gravíssima</h3>
+        <p>Se o omisso efetivamente transmite a doença, alguns tribunais enquadram como lesão gravíssima.</p>
+        <p>Pena: <span class="pena">2 a 8 anos</span> de reclusão. Se for você a vítima, leva o laudo do exame na delegacia mais próxima.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DIREITOS ======================= -->
+<section class="direitos">
+  <div class="container">
+    <span class="kicker">★ OS SEUS DIREITOS</span>
+    <h2>Você tem mais direito<br>do que <span class="yellow">imagina</span>.</h2>
+    <div class="direitos-list">
+      <div class="direito-item">
+        <div class="ico">✓</div>
+        <h3>Ir sozinha aos 12</h3>
+        <p>A partir dos 12 anos, você pode procurar saúde sexual na UBS sem precisar de responsável. ECA + Resolução CONANDA 41/1995.</p>
+      </div>
+      <div class="direito-item">
+        <div class="ico">✓</div>
+        <h3>Sigilo profissional</h3>
+        <p>Médicos, enfermeiros e agentes de saúde têm obrigação legal de sigilo (Código de Ética Médica, arts. 73 a 76). Nada do que você fala sai da consulta.</p>
+      </div>
+      <div class="direito-item">
+        <div class="ico">✓</div>
+        <h3>Acesso universal</h3>
+        <p>Qualquer pessoa, com ou sem documento, com ou sem comprovante de residência, tem direito de atendimento no SUS. É um direito constitucional.</p>
+      </div>
+      <div class="direito-item">
+        <div class="ico">✓</div>
+        <h3>Camisinha sem julgamento</h3>
+        <p>Camisinha externa e interna são de graça, em quantidade livre. Você não precisa explicar pra quê, nem pedir com vergonha.</p>
+      </div>
+      <div class="direito-item">
+        <div class="ico">✓</div>
+        <h3>Atendimento sem discriminação</h3>
+        <p>Independente da cor, orientação sexual, identidade de gênero, deficiência, religião ou classe social. Se sentir discriminação, denuncie pelo Disque 100 ou Ouvidoria do SUS.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= UBS ======================= -->
+<section class="ubs" id="ubs">
+  <div class="container">
+    <div class="kicker">► AQUI DO LADO</div>
+    <h2>UBS Vila<br>Nova Galvão</h2>
+    <div class="addr">
+      Rua Alpheu Luiz Gasparini, 116<br>
+      Vila Nova Galvão · Jaçanã · São Paulo
+    </div>
+
+    <div class="ubs-info-grid">
+      <div class="ubs-info-item">
+        <div class="k">Telefone</div>
+        <div class="v big"><a href="tel:+551122417366">(11) 2241-7366</a></div>
+      </div>
+      <div class="ubs-info-item">
+        <div class="k">Horário</div>
+        <div class="v">Segunda a sexta<br>7h às 19h</div>
+      </div>
+      <div class="ubs-info-item">
+        <div class="k">Fora do horário</div>
+        <div class="v">UPA mais próxima ou<br>Hospital Municipal (24h)</div>
+      </div>
+      <div class="ubs-info-item">
+        <div class="k">Outras UBS</div>
+        <div class="v"><a href="https://prefeitura.sp.gov.br/busca-ubs" target="_blank" rel="noopener">Encontre a mais próxima</a></div>
+      </div>
+    </div>
+
+    <div class="ubs-cta-row">
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+Alpheu+Luiz+Gasparini+116+Vila+Nova+Galvão+São+Paulo" target="_blank" rel="noopener" class="btn btn-primary">Abrir no mapa</a>
+      <a href="tel:+551122417366" class="btn btn-secondary">Ligar agora</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CANAIS ======================= -->
+<section class="canais">
+  <div class="container">
+    <h2>Outros canais<br>úteis</h2>
+    <div class="canais-grid">
+      <a href="tel:136" class="canal">
+        <div class="canal-num">136</div>
+        <div class="canal-txt">
+          <div class="title">Disque Saúde</div>
+          <div class="desc">Tira dúvidas sobre IST e SUS. Ministério da Saúde.</div>
+        </div>
+      </a>
+      <a href="tel:180" class="canal">
+        <div class="canal-num">180</div>
+        <div class="canal-txt">
+          <div class="title">Central da Mulher</div>
+          <div class="desc">Violência contra mulher, denúncias, orientação.</div>
+        </div>
+      </a>
+      <a href="tel:100" class="canal">
+        <div class="canal-num">100</div>
+        <div class="canal-txt">
+          <div class="title">Disque Direitos</div>
+          <div class="desc">Violações contra crianças e adolescentes.</div>
+        </div>
+      </a>
+      <a href="tel:190" class="canal">
+        <div class="canal-num">190</div>
+        <div class="canal-txt">
+          <div class="title">Polícia Militar</div>
+          <div class="desc">Em caso de violência sexual, acione.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer>
+  <div class="container">
+    <div class="brand">SUS · PREVENÇÃO COMBINADA</div>
+    <div class="line">
+      Material educativo baseado em dados da SMS-SP (Boletim Epidemiológico 2025), Fiocruz/Cidacs, Ministério da Saúde e Código Penal Brasileiro. Em caso de dúvidas clínicas, procure sempre um profissional de saúde.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+</script>
+
+</body>
+</html>
