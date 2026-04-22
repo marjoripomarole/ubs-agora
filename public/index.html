@@ -108,6 +108,38 @@
   .hero {
     padding: 48px 0 56px;
   }
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+  }
+  .hero-content {
+    flex: 1;
+    min-width: 0;
+  }
+  .hero-video {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    max-width: 480px;
+  }
+  .hero-video video {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  }
+  @media (min-width: 900px) {
+    .hero-inner {
+      flex-direction: row;
+      align-items: center;
+      gap: 48px;
+    }
+    .hero-video {
+      max-width: 440px;
+    }
+  }
   .hero h1 {
     font-size: 44px;
     font-weight: 900;
@@ -837,17 +869,26 @@
 <!-- ======================= HERO ======================= -->
 <header class="hero">
   <div class="container">
-    <h1>
-      Sexo sem<br>
-      <span class="pink">camisinha?</span><br>
-      <span class="hl">UBS. Agora.</span>
-    </h1>
-    <p class="hero-sub">
-      <span class="arrow">→</span> Tem remédio que bloqueia o HIV em até 72h. Teste de sífilis, HIV e hepatite na hora. Tudo de graça.
-    </p>
-    <div class="cta-row">
-      <a href="#ubs" class="btn btn-primary">Onde ir agora</a>
-      <a href="#passos" class="btn btn-secondary">Como funciona</a>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>
+          Sexo sem<br>
+          <span class="pink">camisinha?</span><br>
+          <span class="hl">UBS. Agora.</span>
+        </h1>
+        <p class="hero-sub">
+          <span class="arrow">→</span> Tem remédio que bloqueia o HIV em até 72h. Teste de sífilis, HIV e hepatite na hora. Tudo de graça.
+        </p>
+        <div class="cta-row">
+          <a href="#ubs" class="btn btn-primary">Onde ir agora</a>
+          <a href="#passos" class="btn btn-secondary">Como funciona</a>
+        </div>
+      </div>
+      <div class="hero-video">
+        <video controls playsinline>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
 </header>
