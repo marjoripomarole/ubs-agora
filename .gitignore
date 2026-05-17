@@ -4,3 +4,10 @@ tags
 tags.lock
 
 .claude
+
+# Large video files
+*.mp4
+*.MP4
+
+# Case folders with patient data and large recordings
+Pomarole_Marjori_260422165441_CASE0070/
