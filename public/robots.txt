@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://SEUDOMINIO.com.br/sitemap.xml
+Sitemap: https://correpraubs.com.br/sitemap.xml
